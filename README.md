@@ -1,27 +1,29 @@
-#Download
+[中文](README.md) | 
+[ENGLISH](README_EN.md)
 
-* http://plugins.jetbrains.com/plugin/7293
+## Description
+A idea plugin for mybatis .
+free-idea-mybatis是一款增强idea对mybatis支持的插件，主要功能如下：
+- 生成mapper xml文件
+- 快速从代码跳转到mapper及从mapper返回代码
+- mybatis自动补全及语法错误提示
 
-# Features
+## 使用方法
+free-idea-mybatis是一个提高mybatis编码的插件。实现了dao代码跳转到mapper，mapper跳转回dao，mapper文件、statement查询自动生成功能。
+### 灵活使用alt+enter和ctrl+B实现提示和跳转
+- 生成mapper文件
+    - alter+enter弹出
+![](https://raw.githubusercontent.com/wuzhizhan/free-idea-mybatis/master/doc/img/create_mapper.png)
+![](https://raw.githubusercontent.com/wuzhizhan/free-idea-mybatis/master/doc/img/choose_mapper_folder.jpg)
+- 生成statement语句
+    - alter+enter弹出
+![](https://raw.githubusercontent.com/wuzhizhan/free-idea-mybatis/master/doc/img/create_statement.jpg)
+- dao跳转到mapper（也可以ctrl+B跳入）
+- ![](https://raw.githubusercontent.com/wuzhizhan/free-idea-mybatis/master/doc/img/to_mapper.jpg)
+- mapper跳转回dao（也可以ctrl+b跳入)
+- ![](https://raw.githubusercontent.com/wuzhizhan/free-idea-mybatis/master/doc/img/to_code.jpg)
 
-* Useful navigation between xml and mapper
-* Support generating of statement, @Param annotation and mapper of xml
-* Support some useful rename of mapper in xml
-* Support correct result type for select statement in mapper xml
-* Support correct unresolved attribute value of mapper xml
-* Support refactor the name of mapper xml file when rename the mapper interface
-* Support refactor for id based tag in mapper xml
-* Support find usage of mapper interface and mapper xml element
-* Highlight conflicting element of mapper xml as errors
-* Auto register mapper as spring bean</li>
-* Mapper parameter auto completion in xml while editting sql
-    * \#{yourParameter}
-    * @Param annotation based
-    * Association is supported
 
-#Generate
-
-* Place your caret on your target
-    * Declaration of mapper interface、method or parameter
-* Shortcut: Option + Enter(Mac) | Alt + Enter(Windows)
-* To generate statement quickly, you can provide some method generating models with "Idea Setting" -> "Mybatis"
+## TODO
+- 根据数据库字段生产bean
+- 快捷生成CURD操作
